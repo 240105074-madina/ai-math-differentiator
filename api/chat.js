@@ -58,7 +58,13 @@ All values must be strings. Explain the mathematics correctly.
       });
     }
 
-    const output = result.output_text;
+const output = result.output
+  ?.flatMap(item => item.content || [])
+  .find(item => item.type === "output_text")?.text;
+
+if (!output) {
+  throw new Error("AI response was empty");
+}
     const task = JSON.parse(
       output.replace(/^```json\s*/i, "")
         .replace(/\s*```$/, "")
