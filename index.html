@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Math Differentiator</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header><div class="badge">EDUCATIONAL TECHNOLOGY & AI</div><h1>AI Math Differentiator</h1><p>One mathematical concept. Three learning levels. Personalized AI guidance.</p></header>
+<section class="hero"><div><span class="eyebrow">CORE TOPIC</span><h2>Quadratic Equations</h2><p>Practice the same core skill with difficulty and scaffolding adapted to your level.</p></div><div class="status"><span id="statusDot"></span><span id="statusText">Demo mode ready</span></div></section>
+<section class="levels">
+<button class="level active" data-level="foundation"><span>01</span><b>Foundation</b><small>Guided & simple</small></button>
+<button class="level" data-level="standard"><span>02</span><b>Standard</b><small>Grade-level</small></button>
+<button class="level" data-level="advanced"><span>03</span><b>Advanced</b><small>Challenge & reasoning</small></button>
+</section>
+<section class="controls"><button id="generate" class="primary">Generate AI Problem <span>→</span></button><button id="newProblem" class="secondary">New problem</button></section>
+<section class="grid">
+<article class="card problem"><div class="cardtop"><span class="label">YOUR TASK</span><span id="levelLabel" class="pill">Foundation</span></div><div id="problemText" class="content">Solve the quadratic equation: <strong>x² + 5x + 6 = 0</strong></div><div class="hintbox"><div class="hinttitle">💡 Hint</div><div id="hintText">Look for two numbers whose product is 6 and whose sum is 5.</div></div></article>
+<article class="card"><div class="cardtop"><span class="label">AI GUIDANCE</span></div><div id="explanation" class="content">First, look at the quadratic expression. We can factor x² + 5x + 6 into two brackets. Find two numbers that multiply to 6 and add to 5.</div><div class="actions"><button id="hintBtn">Get a hint</button><button id="explainBtn">Explain simply</button><button id="solutionBtn">Show solution</button></div></article>
+</section>
+<section class="info"><div><b>How differentiation works</b><p>Foundation uses smaller numbers, explicit steps, and direct hints. Standard uses curriculum-level problems with moderate support. Advanced uses multi-step or real-world applications and less scaffolding.</p></div><div class="check">✓ AI-assisted<br>✓ Instant feedback<br>✓ 3 difficulty levels</div></section>
+<footer>AI Math Differentiator · Built for differentiated mathematics learning</footer>
+</main><script src="script.js"></script></body></html>
